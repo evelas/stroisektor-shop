@@ -1,3 +1,16 @@
 {
-    "editor.formatOnSave": true
+  "prettier.tabWidth": 2,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all",
+  "prettier.semi": true,
+  "prettier.jsxBracketSameLine": true,
+  "prettier.printWidth": 100,
+  "emmet.triggerExpansionOnTab": true,
+  "editor.fontSize": 14,
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "workbench.iconTheme": "vscode-icons"
+  //"javascript.updateImportsOnFileMove.enabled": "always"
 }

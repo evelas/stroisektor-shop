@@ -1,3 +1,5 @@
+@import 'variables';
+
 .cart {
   &__top {
     display: flex;
@@ -72,6 +74,16 @@
     }
   }
 
+  &__required {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    color: $error;
+    &_default {
+      color: $black;
+    }
+  }
+
   &__item {
     display: flex;
     width: 100%;
@@ -84,13 +96,31 @@
       position: relative;
     }
 
+    &_input {
+      padding-top: 25px;
+      margin-top: 15px;
+      padding-bottom: 10px;
+      input,
+      select {
+        padding: 10px 20px;
+        border-radius: 15px;
+        outline: none;
+        border: 2px solid black;
+        font-size: 16px;
+        min-width: 288px;
+        max-width: 288px;
+        &.error {
+          border: 2px solid $error;
+        }
+      }
+    }
+
     &-img {
       display: flex;
       align-items: center;
       margin-right: 15px;
 
       @media (max-width: 768px) {
-        
         justify-content: center;
         order: 1;
       }
@@ -161,7 +191,7 @@
 
       b {
         font-size: 18px;
-        margin: 0 10px
+        margin: 0 10px;
       }
 
       @media (max-width: 768px) {

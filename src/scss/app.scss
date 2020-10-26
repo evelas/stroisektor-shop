@@ -62,6 +62,9 @@ body {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 3vw;
+    &_order {
+      grid-gap: 0;
+    }
 
     @media (max-width: 1380px) {
       grid-template-columns: 1fr 1fr 1fr;
@@ -104,7 +107,7 @@ body {
       grid-template-columns: 1fr;
     }
   }
-  &--product{
+  &--product {
     margin-top: 35px;
   }
 }
