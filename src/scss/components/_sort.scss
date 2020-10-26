@@ -1,0 +1,84 @@
+@import 'variables';
+
+.sort {
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
+  position: relative;
+  flex-wrap: wrap;
+  @media (max-width: 768px) {
+    align-items: center;
+  }
+
+  &__content {
+    margin-left: 20px;
+    position: relative;
+    margin-top: 35px;
+    @media (max-width: 768px) {
+      margin: 35px 0;
+    }
+    @media (max-width: 540px)  {
+      margin: 0 0 35px 0;
+    }
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    min-width: 246px;
+    cursor: pointer;
+
+
+    svg {
+      margin-right: 8px;
+      transform: rotate(180deg);
+
+      &.rotated {
+        transform: rotate(0);
+      }
+    }
+
+    b {
+      margin-right: 8px;
+    }
+
+    span {
+      color: $main;
+      border-bottom: 1px dashed $main;
+      cursor: pointer;
+    }
+  }
+
+  &__popup {
+    position: absolute;
+    right: 0;
+    margin-top: 15px;
+    background: #ffffff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px 0;
+    width: 160px;
+    animation: heightInput 1s forwards 0s linear;
+    z-index: 1000;
+    cursor: pointer;
+
+    ul {
+      overflow: hidden;
+      li {
+        padding: 12px 20px;
+        cursor: pointer;
+
+        &.active,
+        &:hover {
+          background: rgba($main-rgb, 0.05);
+        }
+
+        &.active {
+          font-weight: bold;
+          color: $main;
+        }
+      }
+    }
+  }
+}

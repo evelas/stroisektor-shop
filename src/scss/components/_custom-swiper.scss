@@ -1,0 +1,18 @@
+.swiper {
+  &-container {
+    padding-top: 40px;
+  }
+  &-button-prev,
+  &-button-next {
+    top: 30px;
+    width: 13.5px;
+    height: 22px;
+    &:after {
+      font-size: 25px;
+    }
+  }
+  &-button-prev {
+    right: 30px;
+    left: unset;
+  }
+}

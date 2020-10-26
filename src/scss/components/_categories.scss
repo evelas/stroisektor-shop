@@ -1,0 +1,95 @@
+@import 'variables';
+
+.categories {
+  flex: 1;
+  max-width: 100%;
+  overflow: auto;
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    margin-bottom: 30px;
+  }
+
+  &__ul {
+    display: flex;
+  }
+
+  &__img {
+    height: 80px;
+    object-fit: cover;
+
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__item {
+    // min-width: 180px;
+    // width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: $main;
+    color: $white;
+    padding: 13px 30px;
+    border-radius: 30px;
+    // margin-right: 10px;
+    font-weight: bold;
+    // cursor: pointer;
+    transition: background-color $duration ease-in-out, transform $duration;
+    // @include noselect();
+    min-height: 167px;
+
+    &--all {
+      width: 171px;
+      min-width: 171px;
+      @media (max-width: 400px) {
+        width: 139px;
+        min-width: 139px;
+      }
+
+      margin-right: 10px;
+      margin-top: auto;
+    }
+
+    svg {
+      path,
+      rect,
+      polygon {
+        fill: $white;
+      }
+    }
+
+    p {
+      margin-top: 10px;
+      font-size: 14px;
+      @media (max-width: 400px) {
+        font-size: 11px;
+      }
+    }
+
+    &:hover {
+      transform: scale(0.95);
+      background-color: darken($main, 8%);
+    }
+
+    &:active {
+      background-color: darken($main, 15%);
+      transform: translateY(1px);
+    }
+
+    &.active {
+      background-color: $yellow;
+      color: $black;
+      cursor: unset;
+
+      svg {
+        path,
+        rect,
+        polygon {
+          fill: $black;
+        }
+      }
+    }
+  }
+}
