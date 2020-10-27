@@ -15,7 +15,7 @@ import {
 import SortPopup from '../components/SortPopup';
 import ProductBlock from '../components/ProductBlock';
 
-import { getProducts, setNewLimit } from '../redux/reducers/products';
+import { setNewLimit, loadData } from '../redux/reducers/products';
 import { setCategory, setSortBy } from '../redux/reducers/filters';
 
 const sortItems = [
@@ -95,7 +95,8 @@ function Home() {
   let [categoryName, setCategoryName] = React.useState('Все категории');
 
   React.useEffect(() => {
-    dispatch(getProducts(category, sortBy, limit));
+    // dispatch(getProducts(category, sortBy, limit));
+    dispatch(loadData(category, sortBy, limit));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [category, sortBy, limit]);
 
