@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import cartEmptyImage from './../assets/img/empty-cart.png';
 
 import { Button, CartItem } from '../components/';
-import { plusItem, minusItem, removeItemById, clearAllItems } from '../redux/reducers/cart';
+import { cartActions } from '../redux/actions';
 
 function Cart() {
   const dispatch = useDispatch();
@@ -17,22 +17,22 @@ function Cart() {
 
   const onClearCart = () => {
     if (window.confirm('Вы действительно хотите очистить корзину?')) {
-      dispatch(clearAllItems());
+      dispatch(cartActions.clearAllItems);
     }
   };
 
   const onRemoveItem = (id) => {
     if (window.confirm('Вы действительно хотите удалить?')) {
-      dispatch(removeItemById(id));
+      dispatch(cartActions.removeItemsById(id));
     }
   };
 
   const onPlusItem = (id) => {
-    dispatch(plusItem(id));
+    dispatch(cartActions.plusItem(id));
   };
 
   const onMinusItem = (id) => {
-    dispatch(minusItem(id));
+    dispatch(cartActions.minusItem(id));
   };
 
   return (

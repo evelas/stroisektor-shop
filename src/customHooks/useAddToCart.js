@@ -1,11 +1,11 @@
-import { addProductToCart } from '../redux/reducers/cart';
 import { useSelector, useDispatch } from 'react-redux';
+import { cartActions } from '../redux/actions';
 
 function useAddToCart(id, name, imgLink, price) {
   const dispatch = useDispatch();
   const cartItems = useSelector(({ cart }) => cart.items);
   const handleAddProductToCart = (obj) => {
-    dispatch(addProductToCart(obj));
+    dispatch(cartActions.addProductToCart(obj));
   };
   const onAddProduct = () => {
     const obj = {

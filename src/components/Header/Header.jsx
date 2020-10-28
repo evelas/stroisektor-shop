@@ -10,7 +10,7 @@ import { faSearch, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 import Button from '../Button';
 import SearchItem from '../SearchItem';
-import { getSearch } from '../../redux/reducers/search';
+import { searchActions } from '../../redux/actions';
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -45,8 +45,8 @@ const Header = () => {
     setInputTextSearch({
       text: e.target.value,
     });
-    if (e.target.value.length > 1) {
-      dispatch(getSearch(e.target.value));
+    if (e.target.value.length > 2) {
+      dispatch(searchActions.loadSearch(e.target.value));
       setSearchResult(true);
     } else {
       setSearchResult(false);

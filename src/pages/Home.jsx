@@ -15,8 +15,8 @@ import {
 import SortPopup from '../components/SortPopup';
 import ProductBlock from '../components/ProductBlock';
 
-import { setNewLimit, loadData } from '../redux/reducers/products';
-import { setCategory, setSortBy } from '../redux/reducers/filters';
+import { productActions } from '../redux/actions';
+import { filterActions } from '../redux/actions';
 
 const sortItems = [
   { name: 'популярности', type: 'rating', order: 'DESC', active: 'rating' },
@@ -96,12 +96,12 @@ function Home() {
 
   React.useEffect(() => {
     // dispatch(getProducts(category, sortBy, limit));
-    dispatch(loadData(category, sortBy, limit));
+    dispatch(productActions.loadData(category, sortBy, limit));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [category, sortBy, limit]);
 
   const onSelectCategory = React.useCallback((name) => {
-    dispatch(setCategory(name));
+    dispatch(filterActions.setCategory(name));
     if (name === null) {
       name = 'Все категории';
     }
@@ -110,13 +110,13 @@ function Home() {
   }, []);
 
   const onSelectSort = React.useCallback((name) => {
-    dispatch(setSortBy(name));
+    dispatch(filterActions.setSortBy(name));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const onShowMore = (limit) => {
     console.log(123);
-    dispatch(setNewLimit(limit));
+    dispatch(productActions.setNewLimit(limit));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   };
 

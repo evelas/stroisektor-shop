@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { getOneProduct } from '../../redux/reducers/oneProduct';
 import { withRouter } from 'react-router-dom';
+import { oneProductActions } from '../../redux/actions';
 import { useAddToCart } from '../../customHooks';
 import { Button } from '../../components';
 import ProductLoaded from './ProductLoaded';
@@ -11,7 +11,7 @@ const Product = withRouter((props) => {
   const { product, isLoaded } = useSelector(({ oneProduct }) => oneProduct);
   const productId = props.match.params.productId;
   React.useEffect(() => {
-    dispatch(getOneProduct(productId));
+    dispatch(oneProductActions.loadOneProduct(productId));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [props.match.params.productId]);
 

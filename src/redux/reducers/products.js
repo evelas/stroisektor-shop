@@ -1,10 +1,4 @@
-// import { productsAPI } from '../../api/api';
-
-const SET_PRODUCTS = '/reducers/products/SET_PRODUCTS';
-const IS_LOADED = '/reducers/products/IS_LOADED';
-const IS_LAST_ITEM = '/reducers/products/IS_LAST_ITEM';
-const SET_NEW_LIMIT = '/reducers/products/SET_NEW_LIMIT';
-export const LOAD_DATA = '/reducers/products/LOAD_DATA';
+import { TypesProduct } from '../actions/products';
 
 const initialState = {
   products: [],
@@ -15,61 +9,32 @@ const initialState = {
 
 const productsReducer = (state = initialState, action) => {
   switch (action.type) {
-    case SET_PRODUCTS:
+    case TypesProduct.SET_PRODUCTS:
       return {
         ...state,
-        products: action.products,
+        products: action.payload,
         isLoaded: true,
       };
-    case IS_LOADED:
+    case TypesProduct.IS_LOADED:
       return {
         ...state,
-        isLoaded: action.isLoaded,
+        isLoaded: action.payload,
       };
-    case IS_LAST_ITEM:
+    case TypesProduct.IS_LAST_ITEM:
       return {
         ...state,
-        lastItem: action.lastItem,
+        lastItem: action.payload,
       };
-    case SET_NEW_LIMIT:
+    case TypesProduct.SET_NEW_LIMIT:
       return {
         ...state,
-        limit: action.limit,
+        limit: action.payload,
       };
 
     default:
       return state;
   }
 };
-
-// Action Creators
-export const setProducts = (products) => ({
-  type: SET_PRODUCTS,
-  products,
-});
-
-export const isLoadedAction = (isLoaded) => ({
-  type: IS_LOADED,
-  isLoaded,
-});
-
-export const isLastItem = (lastItem) => ({
-  type: IS_LAST_ITEM,
-  lastItem,
-});
-export const setNewLimit = (limit) => ({
-  type: SET_NEW_LIMIT,
-  limit,
-});
-
-export const loadData = (category, sortBy, limit) => ({
-  type: LOAD_DATA,
-  payload: {
-    category,
-    sortBy,
-    limit,
-  },
-});
 
 // Thunk Creators
 // see sagas.js
