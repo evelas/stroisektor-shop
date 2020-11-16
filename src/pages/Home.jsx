@@ -74,28 +74,13 @@ const categories = [
 ];
 
 function Home() {
-  //   window.test = () => {
-  //     dispatch(getProducts(state.currentPage, state.pageSize))
-  //  }
-
   const dispatch = useDispatch();
-  // const state = useSelector(({products}) => {
-  //     return {
-  //         products: products.products,
-  //         pageSize: products.pageSize,
-  //         currentPage: products.currentPage,
-  //         isLoaded: products.isLoaded,
-  //     }
-  // });
   // --- state ---
-
   const { products, isLoaded, lastItem, limit } = useSelector(({ products }) => products);
   const { category, sortBy } = useSelector(({ filters }) => filters);
   // --- local state ---
   let [categoryName, setCategoryName] = React.useState('Все категории');
-
   React.useEffect(() => {
-    // dispatch(getProducts(category, sortBy, limit));
     dispatch(productActions.loadData(category, sortBy, limit));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [category, sortBy, limit]);
@@ -115,7 +100,6 @@ function Home() {
   }, []);
 
   const onShowMore = (limit) => {
-    console.log(123);
     dispatch(productActions.setNewLimit(limit));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   };
@@ -149,7 +133,7 @@ function Home() {
           {!lastItem && (
             <Button
               onClick={() => {
-                onShowMore(limit + 8);
+                onShowMore(limit + 4);
               }}
               className="button--show-more">
               Показать еще
