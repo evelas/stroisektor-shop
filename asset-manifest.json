@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/stroisektor/static/css/main.06f02b28.chunk.css",
-    "main.js": "/stroisektor/static/js/main.c3fe67b9.chunk.js",
-    "main.js.map": "/stroisektor/static/js/main.c3fe67b9.chunk.js.map",
-    "runtime-main.js": "/stroisektor/static/js/runtime-main.6ae9e99b.js",
-    "runtime-main.js.map": "/stroisektor/static/js/runtime-main.6ae9e99b.js.map",
-    "static/css/2.15d247ec.chunk.css": "/stroisektor/static/css/2.15d247ec.chunk.css",
-    "static/js/2.be011096.chunk.js": "/stroisektor/static/js/2.be011096.chunk.js",
-    "static/js/2.be011096.chunk.js.map": "/stroisektor/static/js/2.be011096.chunk.js.map",
-    "index.html": "/stroisektor/index.html",
-    "precache-manifest.78b9dfb7aee3112a7b84928ef93df793.js": "/stroisektor/precache-manifest.78b9dfb7aee3112a7b84928ef93df793.js",
-    "service-worker.js": "/stroisektor/service-worker.js",
-    "static/css/2.15d247ec.chunk.css.map": "/stroisektor/static/css/2.15d247ec.chunk.css.map",
-    "static/css/main.06f02b28.chunk.css.map": "/stroisektor/static/css/main.06f02b28.chunk.css.map",
-    "static/js/2.be011096.chunk.js.LICENSE.txt": "/stroisektor/static/js/2.be011096.chunk.js.LICENSE.txt",
-    "static/media/app.scss": "/stroisektor/static/media/ProximaNova-Regular.b7c51278.eot",
-    "static/media/empty-cart.png": "/stroisektor/static/media/empty-cart.ceb2faf0.png"
+    "main.css": "/stroisektor-shop/static/css/main.c2b1f155.chunk.css",
+    "main.js": "/stroisektor-shop/static/js/main.c3fe67b9.chunk.js",
+    "main.js.map": "/stroisektor-shop/static/js/main.c3fe67b9.chunk.js.map",
+    "runtime-main.js": "/stroisektor-shop/static/js/runtime-main.e5204a87.js",
+    "runtime-main.js.map": "/stroisektor-shop/static/js/runtime-main.e5204a87.js.map",
+    "static/css/2.15d247ec.chunk.css": "/stroisektor-shop/static/css/2.15d247ec.chunk.css",
+    "static/js/2.be011096.chunk.js": "/stroisektor-shop/static/js/2.be011096.chunk.js",
+    "static/js/2.be011096.chunk.js.map": "/stroisektor-shop/static/js/2.be011096.chunk.js.map",
+    "index.html": "/stroisektor-shop/index.html",
+    "precache-manifest.6835bc60fc24263d06ed1e323a8cf24f.js": "/stroisektor-shop/precache-manifest.6835bc60fc24263d06ed1e323a8cf24f.js",
+    "service-worker.js": "/stroisektor-shop/service-worker.js",
+    "static/css/2.15d247ec.chunk.css.map": "/stroisektor-shop/static/css/2.15d247ec.chunk.css.map",
+    "static/css/main.c2b1f155.chunk.css.map": "/stroisektor-shop/static/css/main.c2b1f155.chunk.css.map",
+    "static/js/2.be011096.chunk.js.LICENSE.txt": "/stroisektor-shop/static/js/2.be011096.chunk.js.LICENSE.txt",
+    "static/media/app.scss": "/stroisektor-shop/static/media/ProximaNova-Regular.b7c51278.eot",
+    "static/media/empty-cart.png": "/stroisektor-shop/static/media/empty-cart.ceb2faf0.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.6ae9e99b.js",
+    "static/js/runtime-main.e5204a87.js",
     "static/css/2.15d247ec.chunk.css",
     "static/js/2.be011096.chunk.js",
-    "static/css/main.06f02b28.chunk.css",
+    "static/css/main.c2b1f155.chunk.css",
     "static/js/main.c3fe67b9.chunk.js"
   ]
 }
