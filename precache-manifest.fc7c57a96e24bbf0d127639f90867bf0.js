@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7b9482d1ed7e1d42deb9fa5b4d7be502",
+    "revision": "b35cf69e0ee9db14f821b98dad59e0b5",
     "url": "/stroisektor-shop/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/stroisektor-shop/static/css/2.15d247ec.chunk.css"
   },
   {
-    "revision": "8e1bea8fa659f4803d81",
+    "revision": "2963bfd2f42fc7ed86f6",
     "url": "/stroisektor-shop/static/css/main.c2b1f155.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/stroisektor-shop/static/js/2.b320e95b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8e1bea8fa659f4803d81",
-    "url": "/stroisektor-shop/static/js/main.820df5ff.chunk.js"
+    "revision": "2963bfd2f42fc7ed86f6",
+    "url": "/stroisektor-shop/static/js/main.27950335.chunk.js"
   },
   {
     "revision": "9b5a12fd9ebd6f6ad474",
