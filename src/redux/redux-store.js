@@ -15,14 +15,6 @@ const persistedReducer = persistReducer(persistConfig, reducers);
 const saga = createSagaMiddleware();
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
-//const store = createStore(reducers, composeEnhancers(applyMiddleware(thunkMiddleware, saga)));
-
-// let store = createStore(reducers, applyMiddleware(thunkMiddleware));
-// saga.run(rootSaga);
-// window.store = store;
-
-// export default store;
-
 const configureStore = () => {
   const store = createStore(
     persistedReducer,
@@ -33,7 +25,5 @@ const configureStore = () => {
   const persistor = persistStore(store);
   return { store, persistor };
 };
-
-// const { store } = configureStore();
 
 export default configureStore;
