@@ -11,11 +11,8 @@ import store from './redux/redux-store';
 // const { persistor, store } = createAppStore();
 
 ReactDOM.render(
-  <Router>
+  <Router basename={process.env.PUBLIC_URL}>
     <Provider store={store}>
-      {/* <PersistGate loading={null} persistor={persistor}>
-        <App />
-      </PersistGate> */}
       <App />
     </Provider>
   </Router>,

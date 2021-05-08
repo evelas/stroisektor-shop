@@ -33,11 +33,6 @@ function SortPopup({ activeSort, items, onClickSort }) {
   const activeNameSort = items.find((item) => item.active === activeSort).name;
 
   return (
-    // ref={(ref) =>{sortRef.current = ref}}
-    // более короткая запись ref={sortRef}
-    // react js проверяет это функция? это объект? это null?
-    // если в реф вернули объект, то я делаю внедрение в current ссылку,
-    // если аноноимную функцию, то я вызываю эту анонимную функцию и потом туда прокидываю ссылку
     <div ref={sortRef} className="sort__content">
       <div className="sort__label" onClick={toggleVisiblePopup}>
         <svg

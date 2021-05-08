@@ -1,14 +1,4 @@
-This is online-shop for stroisektor.
+Онлайн магазин для стройсектор (в разработке).
+Посмотреть можно перейдя по ссылке:
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `yarn`
-
-Download node-modules.
-
-### `yarn start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+[СтройСектор](http://stroisektor.ru/stroisektor-shop/)

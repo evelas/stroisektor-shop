@@ -28,7 +28,7 @@ function SearchItem({ id, name, imgLink, price }) {
               fill="white"
             />
           </svg>
-          {/* <span>Добавить</span> */}
+
           {addToCart.cartItems[id] && <i>{addToCart.cartItems[id].length}</i>}
         </Button>
       </div>

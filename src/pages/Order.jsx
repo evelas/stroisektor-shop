@@ -145,7 +145,6 @@ const OrderPage = (props) => {
   const getOrderData = (formData) => {
     formData['orders'] = orderString;
     console.log(formData);
-    // dispatch formData
   };
   return <OrderReduxForm onSubmit={getOrderData} />;
 };

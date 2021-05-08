@@ -4,7 +4,6 @@ import { NavLink } from 'react-router-dom';
 import Button from './Button';
 
 const CartItem = ({ id, name, img, totalPrice, totalCount, onRemove, onMinus, onPlus }) => {
-    
   const handleRemoveClick = () => {
     onRemove(id);
   };
@@ -19,25 +18,17 @@ const CartItem = ({ id, name, img, totalPrice, totalCount, onRemove, onMinus, on
 
   return (
     <div className="cart__item">
-      
-        <div className="cart__info">
-          <NavLink to={'/product/' + id}>
-            <div className="cart__item-img">
-              <img
-                className="pizza-block__image"
-                src={img}
-                alt="Pizza"
-              />
-            </div>
-            <div className="cart__item-info">
-              <h3>{name}</h3>
-              {/* <p>
-                описание
-              </p> */}
-            </div>
-          </NavLink>
-        </div>
-      
+      <div className="cart__info">
+        <NavLink to={'/product/' + id}>
+          <div className="cart__item-img">
+            <img className="pizza-block__image" src={img} alt="Pizza" />
+          </div>
+          <div className="cart__item-info">
+            <h3>{name}</h3>
+          </div>
+        </NavLink>
+      </div>
+
       <div className="cart__item-count">
         <div
           onClick={handleMinusItem}

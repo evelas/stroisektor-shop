@@ -79,7 +79,7 @@ function Home() {
   const { products, isLoaded, lastItem, limit } = useSelector(({ products }) => products);
   const { category, sortBy } = useSelector(({ filters }) => filters);
   // --- local state ---
-  let [categoryName, setCategoryName] = React.useState('Все категории');
+  const [categoryName, setCategoryName] = React.useState('Все категории');
   React.useEffect(() => {
     dispatch(productActions.loadData(category, sortBy, limit));
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -123,8 +123,7 @@ function Home() {
         <div className="content__items">
           {isLoaded
             ? products.map((item) => <ProductBlock key={item.id} {...item} />)
-            : // : products.map((item) => <ProductBlockLoaded key={item.id}/>)
-              Array(4)
+            : Array(4)
                 .fill(0)
                 .map((_, index) => <ProductBlockLoaded key={index} />)}
         </div>
