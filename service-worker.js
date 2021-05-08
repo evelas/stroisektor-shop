@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/stroisektor-shop/precache-manifest.6835bc60fc24263d06ed1e323a8cf24f.js"
+  "/stroisektor-shop/precache-manifest.3a0756b1387a313b4c1674459dc13e38.js"
 );
 
 self.addEventListener('message', (event) => {
