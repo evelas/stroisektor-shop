@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/stroisektor-shop/static/css/main.c2b1f155.chunk.css",
-    "main.js": "/stroisektor-shop/static/js/main.27950335.chunk.js",
-    "main.js.map": "/stroisektor-shop/static/js/main.27950335.chunk.js.map",
+    "main.js": "/stroisektor-shop/static/js/main.6bc79f87.chunk.js",
+    "main.js.map": "/stroisektor-shop/static/js/main.6bc79f87.chunk.js.map",
     "runtime-main.js": "/stroisektor-shop/static/js/runtime-main.e5204a87.js",
     "runtime-main.js.map": "/stroisektor-shop/static/js/runtime-main.e5204a87.js.map",
     "static/css/2.15d247ec.chunk.css": "/stroisektor-shop/static/css/2.15d247ec.chunk.css",
     "static/js/2.b320e95b.chunk.js": "/stroisektor-shop/static/js/2.b320e95b.chunk.js",
     "static/js/2.b320e95b.chunk.js.map": "/stroisektor-shop/static/js/2.b320e95b.chunk.js.map",
     "index.html": "/stroisektor-shop/index.html",
-    "precache-manifest.fc7c57a96e24bbf0d127639f90867bf0.js": "/stroisektor-shop/precache-manifest.fc7c57a96e24bbf0d127639f90867bf0.js",
+    "precache-manifest.f08c4b3946634509a64574cf34703d21.js": "/stroisektor-shop/precache-manifest.f08c4b3946634509a64574cf34703d21.js",
     "service-worker.js": "/stroisektor-shop/service-worker.js",
     "static/css/2.15d247ec.chunk.css.map": "/stroisektor-shop/static/css/2.15d247ec.chunk.css.map",
     "static/css/main.c2b1f155.chunk.css.map": "/stroisektor-shop/static/css/main.c2b1f155.chunk.css.map",
@@ -22,6 +22,6 @@
     "static/css/2.15d247ec.chunk.css",
     "static/js/2.b320e95b.chunk.js",
     "static/css/main.c2b1f155.chunk.css",
-    "static/js/main.27950335.chunk.js"
+    "static/js/main.6bc79f87.chunk.js"
   ]
 }
